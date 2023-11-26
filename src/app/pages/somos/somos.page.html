@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="success"></ion-icon>
+       
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Somos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Somos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header class="encabezado">
+      <ion-card-title style="color:rgba(151, 77, 180, 0.801); font-weight: bold;">RegistrAPP</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="contenido">
+      <p class="texto">
+      aplicacion para registrar la asistencia de tu clase de forma mas rapida, tanto como para profesores como para alumnos, disponible para IOS y Android
+      </p>
+    </ion-card-content>
+    <img src="assets/logo.PNG" class="ion-padding imagen">
+  </ion-card>
+
+  <ion-card>
+
+    <ion-card-header class="encabezado">
+      <ion-card-subtitle style="color:blueviolet; font-weight:bold;">RegistrAPP</ion-card-subtitle>
+      <ion-card-title style="color:rgb(113, 54, 180); font-weight: bold;">como funciona</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="contenido">
+      <p class="texto">       
+        el maestro mediante la aplicacion puede generar un codigo QR que permitira que todos los alumnos mediante esta app puedan scanear el codigo y puedan registrar su asistencia.
+      </p>
+    </ion-card-content>
+    <img src="assets/logo.PNG" class="ion-padding imagen">
+  </ion-card>
+
+

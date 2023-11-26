@@ -1,0 +1,27 @@
+.encabezado{
+    background-color: rgba(153, 121, 194, 0.247);
+}
+
+.contenido{
+    background-color: rgba(202, 166, 216, 0.253);
+}
+
+.texto{
+    text-align:start ;
+    color:rgb(23, 61, 233);
+    padding: 10%;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+.imagen{
+    background-color:rgba(202, 166, 216, 0.253);
+}
+ion-title{
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: rgb(132, 0, 255);
+  }

@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="success"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title >RegistrAPP <img src="assets/logo.PNG" class="ion-padding imagen"></ion-title>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Qr</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-item>
+    <ion-label position="floating">digite su asignatura
+      
+    </ion-label>
+    <ion-input type="text" [(ngModel)]="data.texto"></ion-input>
+  </ion-item>
+
+
+  <ion-button (click)="generarQr()" expand="block"  shape="round">
+    Generar QR
+  </ion-button>
+
+
+  <ion-card class="ion-text-center">
+    <ion-card-content>
+      <qrcode [qrdata]="qrContent" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>

@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="success"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title >RegistrAPP <img src="assets/logo.PNG" class="ion-padding imagen"></ion-title>
+
+  </ion-toolbar>
+  
+</ion-header>
+<ion-content>
+
+  <ion-button expand="block" color="success" (click)="startScan()">Scannear Código</ion-button>
+  
+  <ion-button expand="full" (clic)="reset()" color="danger" *ngIf="scanResult">
+    <ion-icon slot="start" name="close">
+      reset
+    </ion-icon>
+  </ion-button>
+
+  <video #video [hidden]="!scanActive" width="100%"></video>
+  <canvas #canvas hidden></canvas>
+
+  <ion-button expand="full" (click)="stopScan()" name="close" color="danger" *ngIf="scanActive">
+    <ion-icon slot="start" name="close">
+      Stop scan
+    </ion-icon>
+  </ion-button>
+
+  <ion-card *ngIf="scanResult">
+    <ion-card-header>
+      <ion-card-title>codigo qr</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{ scanResult }}
+    </ion-card-content>
+  </ion-card>
+
+
+
+</ion-content>

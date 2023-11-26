@@ -1,0 +1,63 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="success"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title >RegistrAPP <img src="assets/logo.PNG" class="ion-padding imagen"></ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="cerrarSesion()">
+        Cerrar Sesión
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <p style="text-align:center;font-weight:bold;color:rgb(84, 24, 153)"> Hola! {{nombre}}</p>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">RegistrAPP</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+
+
+  <ion-card>
+    <ion-card-header class="encabezado">
+      <ion-card-subtitle style="color:rgb(121, 64, 212); font-weight: bold;">Desea pasar asistencia?</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content class="contenido">
+      <ion-button routerLink="/qr" expand="block" fill="solid" size="small" color="tertiary" shape="default">
+        Generar QR
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header class="encabezado">
+      <ion-card-subtitle style="color:rgb(121, 64, 212); font-weight: bold;">Desea actualizar informacion</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content class="contenido">
+      <ion-button routerLink="/perfil1" expand="block" fill="solid" size="small" color="tertiary" shape="default">
+        actualizar informacion
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>ID #{{profesor.id}}</ion-card-subtitle>
+      <ion-card-title>Nombre:{{profesor.nombre}} </ion-card-title>
+      <ion-card-title>Apellido:{{profesor.apellido}} </ion-card-title>
+      <ion-card-title>Telefono:{{profesor.telefono}} </ion-card-title>
+      <ion-card-title>Asignatura1:{{profesor.asignatura1}} </ion-card-title>
+      <ion-card-title>Asignatura2:{{profesor.asignatura2}} </ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+
+</ion-content>

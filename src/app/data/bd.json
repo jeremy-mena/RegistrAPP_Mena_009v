@@ -1,0 +1,157 @@
+{
+  "profesores": [
+    {
+      "id": 1,
+      "nombre": "jeremy",
+      "apellido": "mena",
+      "telefono": "934521345",
+      "asignatura1": "comunicacion escrita",
+      "asignatura2": "etica"
+    },
+    {
+      "id": 2,
+      "nombre": "barbara",
+      "apellido": "silva",
+      "telefono": "934045345",
+      "asignatura1": "comunicacion escrita",
+      "asignatura2": "etica"
+    },
+    {
+      "id": 3,
+      "nombre": "janara",
+      "apellido": "castro",
+      "telefono": "93986345",
+      "asignatura1": "comunicacion escrita",
+      "asignatura2": "etica"
+    }
+  ],
+  "alumnos": [
+    {
+      "id": 1,
+      "nombreA": "jeremy",
+      "apellidop": "mena",
+      "apellidom": "castro",
+      "telefono": "93986345"
+    },
+    {
+      "id": 2,
+      "nombre": "martin",
+      "apellidop": "mena",
+      "apellidom": "castro",
+      "telefono": "93986345"
+    },
+    {
+      "id": 3,
+      "nombre": "janara",
+      "apellidop": "mena",
+      "apellidom": "castro",
+      "telefono": "93986345"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "username": "jeremy",
+      "password": "duoc",
+      "role": "usuario",
+      "isactive": true
+    },
+    {
+      "id": 1,
+      "username": "barbara",
+      "password": "duoc",
+      "role": "usuario",
+      "isactive": true
+    },
+    {
+      "username": "martin",
+      "password": "12345678",
+      "role": "academico",
+      "isactive": true,
+      "id": 2
+    },
+    {
+      "username": "ignacio",
+      "password": "duoc1234",
+      "role": "academico",
+      "isactive": true,
+      "id": 3
+    }
+  ],
+  "usuarios2": [
+    {
+      "id": 1,
+      "username": "ignacio",
+      "password": "duoc",
+      "role": "usuario1",
+      "isactive": true
+    },
+    {
+      "id": 1,
+      "username": "rozio",
+      "password": "duoc",
+      "role": "usuario1",
+      "isactive": true
+    },
+    {
+      "username": "jonathan",
+      "password": "12345678",
+      "role": "academico",
+      "isactive": true,
+      "id": 2
+    }
+  ],
+  "palabras": [
+    {
+      "id": 1,
+      "palabra": "duoc maipu",
+      "asignatura": "ingles",
+      "fecha": "201123",
+      "username": "usuario"
+    },
+    {
+      "palabra": "casa",
+      "asignatura": "ingles",
+      "fecha": "201123",
+      "username": "usuario",
+      "id": 2
+    },
+    {
+      "palabra": "Duoc Maipu",
+      "asignatura": "ingles",
+      "fecha": "201123",
+      "username": "usuario",
+      "id": 3
+    },
+    {
+      "palabra": " - Fecha: 2023-11-24 22:29:36",
+      "username": "jeremy",
+      "id": 4
+    },
+    {
+      "palabra": "ingles - Fecha: 2023-11-24 22:29:36",
+      "username": "jeremy",
+      "id": 5
+    },
+    {
+      "palabra": "ingles - Fecha: 2023-11-24 22:33:39",
+      "username": "jeremy",
+      "id": 6
+    },
+    {
+      "palabra": "matematica - Fecha: 2023-11-24 22:34:58",
+      "username": "jeremy",
+      "id": 7
+    },
+    {
+      "palabra": "matematicas - Fecha: 2023-11-24 22:40:00",
+      "username": "jeremy",
+      "id": 8
+    },
+    {
+      "palabra": "ingles1 - Fecha: 2023-11-24 22:42:19",
+      "username": "jeremy",
+      "id": 9
+    }
+  ]
+}
